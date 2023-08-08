@@ -1,0 +1,127 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #333;
+
+        /*Design Palette*/
+    --Melrose: #B5B0D9;
+    --Free-Speech-Blue: #4D49BF;
+    --MediumSlateBlueD: #6863F2;
+    --MediumSlateBlueL: #9C00F2;
+    --WhiteSmoke: #F2F2F2;
+    --DarkGrey: #333;
+    --DarkSilver: #555;
+
+ 
+    --Height: 1136px;
+    --Width: 640px;
+}
+
+/*Phone*/
+.mockPhone {
+    background-color: var(--DarkSilver);
+    transform: scale(0.8);
+    display: inline-block;
+    padding: 15px;
+}
+.mockPhone .screen {
+    width: var(--Width);
+    height: var(--Height);
+
+    border: 1px solid var(--DarkGrey);
+    
+}
+/*viber*/
+#viber-app {
+    background-color: var(--WhiteSmoke);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: 35px;
+}
+#viber-app header {
+height: 7%;
+width: 100%;
+position: absolute;
+background-color: brown;
+}
+#viber-app section {
+height: 86%;
+width: 100%;
+background-color: darkorange;
+position: relative;
+top: 7%;
+}
+#viber-app footer {
+height: 7%;
+width: 100%;
+position: absolute;
+background-color: brown; 
+bottom: 0;
+}
+#viber-app .contacts {
+    height: 100%;
+    background-color: darkgreen;
+}
+#viber-app .contacts li {
+    height: calc(100% / 8);
+    border-top: 1px solid var(--DarkSilver);
+    border-bottom: 1px solid var(--DarkSilver);
+    box-sizing: border-box;
+}
+.contacts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--DarkSilver);
+    text-decoration: none;
+    color: black;
+}
+
+.contact img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.contact p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--MediumSlateBlueD);
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.status {
+    font-size: 14px;
+    color: var(--Free-Speech-Blue);
+    margin-bottom: 5px;
+}
+
+.time {
+    font-size: 12px;
+    color: var(--Melrose);
+}
+
+.count {
+    background-color: var(--MediumSlateBlueL);
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
